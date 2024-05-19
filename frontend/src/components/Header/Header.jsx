@@ -1,5 +1,7 @@
 import UserImage from "../../assets/images/avatar-icon.png";
 import { NavLink, Link } from "react-router-dom";
+import { BiMenu } from "react-icons/bi";
+import { useEffect, useRef } from "react";
 
 const navLinks = [
   {
@@ -21,19 +23,45 @@ const navLinks = [
 ];
 
 const Header = () => {
+  const headerRef = useRef(null);
+  const menuRef = useRef(null);
+
+  const handleStickyHeader = () => {
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("sticky__header");
+      } else {
+        headerRef.current.classList.remove("sticky__header");
+      }
+    });
+  };
+
+  useEffect(() => {
+    handleStickyHeader();
+
+    return () => window.removeEventListener("scroll", handleStickyHeader);
+  });
+
+  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+
   return (
-    <header className="header flex items-center">
+    <header className="header flex items-center" ref={headerRef}>
       <div className="container">
         <div className="flex items-center justify-between">
           {/* Logo section  start */}
           <div>
-            <h2>Doctor-Booking</h2>
+            <h2 className="font-[200] text-xl">
+              <span className="text-lg font-[600]">THE</span> <br /> DOCTOR
+            </h2>
             {/* <img src="" alt="" /> */}
           </div>
           {/* Logo section  end */}
 
           {/* menu section start  */}
-          <div className="navigation">
+          <div className="navigation" ref={menuRef} onClick={toggleMenu}>
             <ul className="menu flex items-center gap-[2.7rem]">
               {navLinks.map((link, index) => (
                 <li key={index}>
@@ -56,7 +84,7 @@ const Header = () => {
           {/* Navbar right  start */}
 
           <div className="flex items-center gap-4">
-            <div>
+            <div className="hidden">
               <Link to="/">
                 <figure className="w-[35px] h-[35px] rounded-full ">
                   <img
@@ -73,6 +101,9 @@ const Header = () => {
                 Login
               </button>
             </Link>
+            <span className="lg:hidden md:inline-block" onClick={toggleMenu}>
+              <BiMenu className=" w-6 h-6 cursor-pointer" />
+            </span>
           </div>
           {/* Navbar right  end */}
         </div>
