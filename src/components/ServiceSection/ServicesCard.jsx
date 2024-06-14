@@ -2,8 +2,9 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const ServicesCard = ({ item, index }) => {
-  const { name, desc, bgColor, textColor } = item;
+  const { name, desc } = item;
 
+  // bgColor, textColor
   return (
     <div className="py-[30px] px-3 lg:px-5">
       <h2 className="text-[26px] leading-9 text-headingColor font-[700]">
@@ -20,7 +21,7 @@ const ServicesCard = ({ item, index }) => {
         >
           <FaArrowRight />
         </Link>
-        <span
+        {/* <span
           className="w-[44px] h-[44px] flex items-center justify-center text-[18px] leading-[300px] font-[600]"
           style={{
             background: `${bgColor}`,
@@ -29,7 +30,7 @@ const ServicesCard = ({ item, index }) => {
           }}
         >
           {index + 1}
-        </span>
+        </span> */}
       </div>
     </div>
   );

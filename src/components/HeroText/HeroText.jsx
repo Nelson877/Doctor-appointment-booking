@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HeroText = () => {
   return (
     <div>
@@ -12,11 +14,13 @@ const HeroText = () => {
           a doctor.
         </p>
 
-        <button className="btn">Requests an Appointment</button>
+        <Link to="/">
+          <button className="btn">Requests an Appointment</button>
+        </Link>
       </div>
       {/* hero content  end */}
 
-      <div className="mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]">
+      <div className="mt-[30px] lg:mt-[70px] flex flex-row lg:items-center gap-5 lg:gap-[30px]">
         {/* set 1 start  */}
         <div>
           <h2 className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700] text-headerColor">
