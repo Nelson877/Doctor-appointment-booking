@@ -1,4 +1,5 @@
 import About from "../components/About/About";
+import FaqSection from "../components/FaqSection/FaqSection";
 import Feature from "../components/Feature/Feature";
 import HeroImage from "../components/HeroImage/HeroImage";
 import HeroText from "../components/HeroText/HeroText";
@@ -6,6 +7,7 @@ import HeroText from "../components/HeroText/HeroText";
 import Icons from "../components/IconSection/Icons";
 import OurDoctor from "../components/OurDoctor/OurDoctor";
 import Service from "../components/ServiceSection/Service";
+import Testiomonial from "../components/Testiomonial/Testiomonial";
 
 const Home = () => {
   return (
@@ -45,6 +47,15 @@ const Home = () => {
       {/* Our Doctors section start  */}
       <OurDoctor />
       {/* Our Doctors section end  */}
+
+      {/* Faq section start  */}
+      <FaqSection />
+      {/* Faq section end  */}
+
+      {/* Testiomonial section start  */}
+
+      <Testiomonial />
+      {/* Testiomonial section end  */}
     </>
   );
 };

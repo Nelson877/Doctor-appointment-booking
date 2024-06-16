@@ -48,10 +48,10 @@ const DoctorCard = ({ doctor }) => {
           </p>
         </div>
         <Link
-          to="/doctor/1"
+          to="/doctor"
           className="w-[30px] h-[30px] rounded-full border border-solid  border-[#181A1E] flex items-center justify-center hover:bg-primaryColor hover:border-none hover:text-white"
         >
-          <FaArrowRight />
+          <FaArrowRight className="group-hover:text-white" />
         </Link>
       </div>
     </div>
