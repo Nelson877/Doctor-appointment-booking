@@ -16,7 +16,7 @@ export const faqs = [
   {
     question: "Sould i be taking any supplements",
     content:
-      "Su[[lements should never take priorty over whole, nutrient-dense foods, but supplements can helpfill in nutritional gaps in your diet. Your doctor may be able to recommend supplements based on your medical history, especially if you've been seeing the same doctor for a long time, but in many cases, blood work is necessary to determine a true need for supplements.",
+      "Su[lements should never take priorty over whole, nutrient-dense foods, but supplements can helpfill in nutritional gaps in your diet. Your doctor may be able to recommend supplements based on your medical history, especially if you've been seeing the same doctor for a long time, but in many cases, blood work is necessary to determine a true need for supplements.",
     infro:
       "Tell your doctor about any symptoms you've been having and ask if supplements can help. Chances are, you'll be told to focus on eating a healthy diet first (if you don't already), and come back if youe symptoms don't go away. Try keeping a food journal to share with your doctor at your next visit -- this can help them identify gaps in your diet.",
   },
