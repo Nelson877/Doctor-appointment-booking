@@ -13,11 +13,11 @@ const navLinks = [
     display: "Find a Doctor",
   },
   {
-    path: "/services",
+    path: "/our-services",
     display: "Services",
   },
   {
-    path: "/contact",
+    path: "/contact-us",
     display: "Contact",
   },
 ];
@@ -52,12 +52,14 @@ const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between">
           {/* Logo section  start */}
+          <Link to='/'>
           <div>
             <h2 className="font-[200] text-xl">
               <span className="text-lg font-[600]">THE</span> <br /> DOCTOR
             </h2>
             {/* <img src="" alt="" /> */}
           </div>
+          </Link>
           {/* Logo section  end */}
 
           {/* menu section start  */}
