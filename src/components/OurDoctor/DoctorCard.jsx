@@ -48,7 +48,7 @@ const DoctorCard = ({ doctor }) => {
           </p>
         </div>
         <Link
-          to="/doctor"
+          to="/doctor-details"
           className="w-[30px] h-[30px] rounded-full border border-solid  border-[#181A1E] flex items-center justify-center hover:bg-primaryColor hover:border-none hover:text-white"
         >
           <FaArrowRight className="group-hover:text-white" />
