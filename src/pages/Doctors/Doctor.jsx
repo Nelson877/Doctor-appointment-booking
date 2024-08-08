@@ -1,6 +1,7 @@
 import DoctorCard from "../../components/OurDoctor/DoctorCard";
-import { doctors } from "../../assets/data/doctors";
 import Testiomonial from "../../components/Testiomonial/Testiomonial";
+import FindDoctorCard from "../../components/FindDoctor/FindDoctorCard";
+import { allDoctors } from "../../assets/data/allDoctor";
 
 const Doctor = () => {
   return (
@@ -28,8 +29,8 @@ const Doctor = () => {
       <section>
         <div className='container'>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 '>
-            {doctors.map((doctor) => (
-              <DoctorCard key={doctor.id} doctor={doctor} />
+            {allDoctors.map((allDoctor) => (
+              <FindDoctorCard key={allDoctor.id} allDoctor={allDoctor} />
             ))}
           </div>
         </div>
