@@ -69,11 +69,11 @@ function DoctorDetails() {
           </div>
           {/* secttion one end  */}
 
-          {/* secttion two start  */}
+          {/* Side Panel section start  */}
           <div>
             <SidePanel/>
           </div>
-          {/* secttion two end  */}
+          {/* Side Panel section end  */}
         </div>
       </div>
     </section>

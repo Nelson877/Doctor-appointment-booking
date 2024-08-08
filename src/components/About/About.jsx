@@ -10,7 +10,7 @@ const About = () => {
         {/* about image section start  */}
         <div className="relative w-3/4 lg:w-1/2 xl:w-[770px] z-10 order-2 lg:order">
           <img src={AboutImage} alt="" />
-          <div className="absolute z-20 bottom-4 w-[200px] md:w-[300px] right-[-30%] md:right-[-7%] lg:right-[10%]">
+          <div className="absolute z-20 bottom-4 w-[200px] md:w-[300px] right-[-30%] md:right-[-7%] lg:right-[20%]">
             <img src={AboutImage1} alt="" />
           </div>
         </div>
@@ -26,13 +26,13 @@ const About = () => {
             temporibus ratione error beatae est praesentium sapiente, doloribus
             eum, quaerat fugiat earum quam impedit modi.
           </p>
-          <p className="text__para mt-[30px]">
+          {/* <p className="text__para mt-[30px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
             cumque repudiandae. Dicta aliquid repellendus fugiat hic commodi
             enim repudiandae, officiis ratione optio quasi dolorem libero
             placeat, nihil reprehenderit ab nam.
-          </p>
-          <Link to="/">
+          </p> */}
+          <Link to="/view-more-about">
             <button className="btn">View More</button>
             {/* <FaFireExtinguisher /> */}
           </Link>

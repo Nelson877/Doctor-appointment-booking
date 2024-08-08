@@ -26,23 +26,25 @@ const DoctorSchema = new mongoose.Schema({
   role: {
     type: String,
   },
-
-  // Fields for doctors only
-
-  specialization: { type: String },
+  specialization: {
+    type: String,
+  },
   qualifications: {
     type: Array,
   },
-
   bio: {
     type: String,
     maxLength: 50,
   },
-  about: { type: String },
-  timeSlots: { type: Array },
+  about: {
+    type: String,
+  },
+  timeSlots: {
+    type: Array,
+  },
   reviews: [
     {
-      type: mongoose.Types.ObjectionId,
+      type: mongoose.Types.ObjectId,
       ref: "Review",
     },
   ],
@@ -53,11 +55,11 @@ const DoctorSchema = new mongoose.Schema({
   isApproved: {
     type: String,
     enum: ["pending", "approved", "cancelled"],
-    default: " pending",
+    default: "pending",
   },
   appointments: [
     {
-      type: mongoose.Types.ObjectionId,
+      type: mongoose.Types.ObjectId,
       ref: "Appointment",
     },
   ],

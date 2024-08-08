@@ -9,7 +9,7 @@ const Feature = () => {
           {/* feature content start */}
           <div className="xl:w-[670px]">
             <h2 className="heading">
-              Get virtual treatment <br /> anytime.
+              Get virtual treatment anytime.
             </h2>
             <ul className="pl-4">
               <li className="text__para">
@@ -26,7 +26,7 @@ const Feature = () => {
                 online <br /> Schedule tool to select an appointment time.
               </li>
             </ul>
-            <Link to="/">
+            <Link to="/blog-posts">
               <button className="btn">Learn More</button>
             </Link>
           </div>
