@@ -20,7 +20,7 @@ const  handleSubmitReview = async e =>{
       {/* head text and star rating  section start  */}
       <div>
         <h3 className='text-headingColor text-[16px] leading-6 font-semibold mb-4 mt-0'>
-          How would you rate the overall experience?*
+          How would you rate the overall experience? <span className="text-primaryColor">*</span>
         </h3>
         {/* star section start */}
         <div className='flex gap-1'>
@@ -43,6 +43,7 @@ const  handleSubmitReview = async e =>{
                   setHover(0);
                   setRating(0);
                 }}
+              
               >
                 <span>
                   <AiFillStar />
@@ -58,7 +59,7 @@ const  handleSubmitReview = async e =>{
       {/* form section start  */}
       <div className='mt-[30px]'>
         <h3 className='text-headingColor text-[16px] leading-6 font-semibold mb-4 mt-0'>
-          Share your feedback or suggestion*
+          Share your feedback or suggestion <span className="text-primaryColor">*</span>
         </h3>
         <textarea
           className='border border-solid border-[#0066ff34] focus-outline outline-primaryColor w-full px-4 py-3 rounded-md'

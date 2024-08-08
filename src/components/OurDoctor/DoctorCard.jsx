@@ -28,11 +28,11 @@ const DoctorCard = ({ doctor }) => {
         </span>
 
         <div className="flex items-center gap-[6px]">
-          <span className="flex items-center gap-[6px] text-[14px] leading-6 lg:text-[16px] leading-7 font-semibold text-headingColor">
+          <span className="flex items-center gap-[6px] text-[14px] leading-6 lg:text-[16px] lg:leading-7 font-semibold text-headingColor">
             <img src={StarIcon} alt="" />
             {avgRating}
           </span>
-          <span className="flex items-center gap-[6px] text-[14px] leading-6 lg:text-[16px] leading-7 font-[400] text-textColor">
+          <span className="flex items-center gap-[6px] text-[14px] leading-6 lg:text-[16px] lg:leading-7 font-[400] text-textColor">
             ({totalRating})
           </span>
         </div>

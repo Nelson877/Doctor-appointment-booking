@@ -7,6 +7,10 @@ import Doctor from "../pages/Doctors/Doctor";
 import DoctorDetails from "../pages/Doctors/DoctorDetails";
 
 import { Routes, Route } from "react-router-dom";
+import GetVirtual from "../components/GetVirtual/GetVirtual.jsx";
+import BookAppointment from "../components/BookAppointment/BookAppointment.jsx";
+import DoctorLocation from "../components/DoctorLocation/DoctorLocation.jsx";
+import ViewMoreAbout from "../components/ViewMoreAbout/ViewMoreAbout.jsx";
 function Routers() {
   return (
     <Routes>
@@ -17,7 +21,10 @@ function Routers() {
       <Route path="/login" element={<Login />} />
       <Route path="/doctor" element={<Doctor />} />
       <Route path="/doctor-details" element={<DoctorDetails />} />
-      <Route path="/blog-posts" element={<DoctorDetails />} />
+      <Route path="/blog-posts" element={<GetVirtual />} />
+      <Route path="/book-appointment" element={<BookAppointment />} />
+      <Route path="/doctor-location" element={<DoctorLocation />} />
+      <Route path="/view-more-about" element={<ViewMoreAbout />} />
     </Routes>
   );
 }

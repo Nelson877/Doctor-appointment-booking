@@ -62,7 +62,7 @@ const Icons = () => {
               </p>
 
               <Link
-                to="/contact"
+                to="/doctor-location"
                 className="w-[44px] h-[44px] rounded-full border border-solid  border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center hover:bg-primaryColor hover:border-none hover:text-white"
               >
                 <FaArrowRight />
@@ -87,7 +87,7 @@ const Icons = () => {
               </p>
 
               <Link
-                to="/doctor"
+                to="/book-appointment"
                 className="w-[44px] h-[44px] rounded-full border border-solid  border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center hover:bg-primaryColor hover:border-none hover:text-white"
               >
                 <FaArrowRight />

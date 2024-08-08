@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SidePanel = () => {
   return (
     <div className='shadow-2xl p-3 lg:p-5 rounded-md'>
@@ -13,9 +15,9 @@ const SidePanel = () => {
           Available Time Slots:
         </p>
         <ul className='t-3 '>
-        {/* start  */}
+          {/* start  */}
 
-        <li className='mb-2 flex justify-between items-center'>
+          <li className='mb-2 flex justify-between items-center'>
             <p className='text-[15px] leading-6 text-headingColor font-semibold'>
               Sunday
             </p>
@@ -23,10 +25,10 @@ const SidePanel = () => {
               4:00am - 9:30pm
             </p>
           </li>
-        {/* end */}
-         {/* start  */}
+          {/* end */}
+          {/* start  */}
 
-         <li className='mb-2 flex justify-between items-center'>
+          <li className='mb-2 flex justify-between items-center'>
             <p className='text-[15px] leading-6 text-headingColor font-semibold'>
               Monday
             </p>
@@ -34,10 +36,10 @@ const SidePanel = () => {
               4:00am - 9:30pm
             </p>
           </li>
-        {/* end */}
-         {/* start  */}
+          {/* end */}
+          {/* start  */}
 
-         <li className='mb-2 flex justify-between items-center'>
+          <li className='mb-2 flex justify-between items-center'>
             <p className='text-[15px] leading-6 text-headingColor font-semibold'>
               Wedneday
             </p>
@@ -45,10 +47,12 @@ const SidePanel = () => {
               4:00am - 9:30pm
             </p>
           </li>
-        {/* end */}
+          {/* end */}
         </ul>
       </div>
-      <button className="btn px-2 w-full rounded-md">Book Appointment</button>
+      <Link to='/book-appointment'>
+        <button className='btn px-2 w-full rounded-md'>Book Appointment</button>
+      </Link>
     </div>
   );
 };

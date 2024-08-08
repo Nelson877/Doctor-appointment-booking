@@ -4,8 +4,8 @@ const HeroText = () => {
   return (
     <div>
       <div className="lg:w-[570px]">
-        <h1 className="text-[36px] leading-[46px] text-headerColor font-[500] md:leading-[70px] md:text-[60px]">
-          You only have one life, live it well.
+        <h1 className="text-[36px] leading-[46px] text-headerColor font-bold md:leading-[70px] md:text-[60px]">
+          You only <span className="text-primaryColor">have one life,</span> live it well.
         </h1>
         <p className="text__para">
           Both "doctor's appointment" and "doctor appointment" are valid terms
@@ -14,7 +14,7 @@ const HeroText = () => {
           a doctor.
         </p>
 
-        <Link to="/">
+        <Link to="/book-appointment">
           <button className="btn">Requests an Appointment</button>
         </Link>
       </div>
